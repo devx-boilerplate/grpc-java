@@ -1,0 +1,9 @@
+version: sdd/v1
+kind: layout
+metadata:
+ name: grpc-java-1
+ framework: grpc
+ language: java
+spec:
+ buildPath: "./cmd/$servicename/"
+ configPath: "./cmd/$servicename/config/"
