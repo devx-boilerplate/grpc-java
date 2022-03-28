@@ -5,7 +5,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>service1</module>
     </modules>
 
     <groupId>com.example</groupId>
