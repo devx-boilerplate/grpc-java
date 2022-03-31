@@ -20,7 +20,13 @@
         <dependency>
             <groupId>{{ index . "javaPackage" }}</groupId>
             <artifactId>{{ index . "module" }}-{{ index . "package" }}</artifactId>
-            <version>LATEST</version>
+            <version>v0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>{{ index . "javaPackage" }}</groupId>
+            <artifactId>{{ index . "module" }}-{{ index . "package" }}</artifactId>
+            <version>v0.0.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

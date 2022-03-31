@@ -15,7 +15,7 @@ public class {{ index . "serverName" }}Service extends {{ index . "serverName" }
     // {{ .Name }}
     public void {{ .LowCaseName }}({{ .ServerName }}OuterClass.{{ .RequestType }} request,
     StreamObserver<{{ .ServerName }}OuterClass.{{ .ResponseType }}> responseObserver) {
-        // PbServiceOuterClass.HelloReply reply = PbServiceOuterClass.HelloReply.newBuilder().setMsg("Msg: Hello, request.getMsg() + ", " + new Date() + "\n").build();
+        // PbServiceOuterClass.HelloReply reply = PbServiceOuterClass.HelloReply.newBuilder().setMsg("Msg: Hello," + request.getMsg() + "\n").build();
         {{ .ServerName }}OuterClass.{{ .ResponseType }} reply = {{ .ServerName }}OuterClass.{{ .ResponseType }}.newBuilder().build();
         responseObserver.onNext(reply);
         responseObserver.onCompleted();

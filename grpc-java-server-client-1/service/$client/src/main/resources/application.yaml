@@ -1,0 +1,15 @@
+server:
+  port: 8787
+spring:
+  application:
+    name: grpc-client
+
+grpc:
+  client:
+    # grpc config name, GrpcClient annotation will use it
+    grpc-server-config:
+      # gRPC server address
+      address: 'static://127.0.0.1:9999'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
