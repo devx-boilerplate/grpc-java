@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>{{ index . "javaPackage" }}</groupId>
-            <artifactId>{{ index . "module" }}-{{ index . "package" }}</artifactId>
+            <artifactId>{{ index . "serverName" }}</artifactId>
             <version>RELEASE</version>
         </dependency>
     </dependencies>
