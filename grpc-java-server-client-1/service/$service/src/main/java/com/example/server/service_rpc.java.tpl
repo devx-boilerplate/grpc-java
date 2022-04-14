@@ -8,9 +8,8 @@ import net.devh.boot.grpc.server.service.GrpcService;
 @GrpcService
 public class {{ index . "serverName" }}Service extends {{ index . "serverName" }}Grpc.{{ index . "serverName" }}ImplBase {
     {{- range index . "services" }}
-    {{- $ServiceName := .Name }}
-    {{- $ServiceName := $ServiceName }}
       {{- range .RPC}}
+
     @Override
     // {{ .Name }}
     public void {{ .LowCaseName }}({{ .ServerName }}OuterClass.{{ .RequestType }} request,
